@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my journal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>my journal</h1>
+            <p>A simple note-taking app to write down your thoughts and ideas.</p>
+        </header>
+
+        <div class="toolbar">
+            <button id="newNoteBtn" class="btn-primary">+ New Note</button>
+            <input type="text" id="searchInput" placeholder="Search notes..." />
+        </div>
+
+        <div class="main-content">
+            <div class="notes-sidebar">
+                <div id="notesList"></div>
+            </div>
+
+            <div class="editor-area">
+                <div class="editor-header">
+                    <input type="text" id="noteTitle" placeholder="Note title..." />
+                    <button id="deleteNoteBtn" class="btn-delete">Delete</button>
+                </div>
+                <textarea id="noteContent" placeholder="Start writing..."></textarea>
+                <div class="editor-footer">
+                    <span id="charCount">0 characters</span>
+                    <span id="lastSaved">Not saved</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>My Tasks</h1>
+            <p>A simple todo list app to track your tasks and check them off when complete.</p>
+        </header>
+
+        <div class="add-task-section">
+            <input type="text" id="taskInput" placeholder="What do you need to do?" />
+            <button id="addButton" class="btn-primary">Add Task</button>
+        </div>
+
+        <div class="task-list-section">
+            <ul id="taskList"></ul>
+        </div>
+
+        <div class="actions-section">
+            <button id="clearCompleted" class="btn-secondary">Clear Completed</button>
+            <span id="taskCounter">0 tasks</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>My Game</h1>
+            <div class="score-display">
+                <span>Score: <span id="score">0</span></span>
+                <span>High Score: <span id="highScore">0</span></span>
+            </div>
+        </header>
+
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+        <div id="gameOver" class="game-over hidden">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button id="restartBtn" class="btn-primary">Play Again</button>
+        </div>
+
+        <div class="instructions">
+            <p>Use arrow keys or WASD to move</p>
+            <p>Collect ⭐ stars! Avoid 🔴 obstacles!</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
